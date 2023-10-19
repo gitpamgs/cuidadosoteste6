@@ -1,0 +1,140 @@
+:root {
+    --font-quicksand: 'Quicksand', sans-serif;
+    --font-comfortaa:  'Comfortaa', cursive;
+    --background-branco: #FFFFFF;
+    --bacground-oficial: #1576F5;
+    --background-azul-claro: #0E6EED;
+}
+
+
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* --------- ESTILIZAÇÃO BÁSICA --------- */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-comfortaa);
+}
+
+/* ------------------ RESPONSIVIDADE DAS FOTOS DO BANNER ------------------ */
+
+@media  screen and (max-width: 991px) {
+    .banner {
+        background: url(../imgs/main/idosos.png);
+        background-size: cover;
+    }
+}
+
+/* --------- ESTILIZAÇÃO DO BANNER --------- */
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../imgs/main/imgHomeo.png);
+    background-size: cover;
+}
+
+.baixar-btn {
+    background-color: #1576F5;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    width: 9rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 3vh;
+}
+
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #1576F5;
+}
+
+#hero h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+        background-color: transparent !important;
+        border-color: transparent
+} 
+
+@media screen and (max-width: 1200px){
+    
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url(../imgs/main/1200.png);
+    background-size: cover;
+}
+
+}
+
+@media screen and (max-width: 900px){
+    section#hero {
+        height: calc(70vh - 60px);
+    }
+    .banner {
+        height: 65vh;
+    }
+    #hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    #hero p {
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    #hero h1{
+        font-size: 3.3rem;
+    }
+
+    #hero p{
+        font-size: 13px;
+    }
+}
+
+/* ESTILIZAÇÃO DA CURVA */
+.curved svg {
+    display: block;
+}
+
+@media screen and (max-width: 500px){
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p{
+        font-size: 12px;
+    }
+}

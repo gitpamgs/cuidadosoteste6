@@ -1,0 +1,160 @@
+:root {
+    --font-quicksand: 'Quicksand', sans-serif;
+    --font-comfortaa:  'Comfortaa', cursive;
+    --background-branco: #FFFFFF;
+    --bacground-oficial: #1576F5;
+    --background-azul-claro: #0E6EED;
+}
+
+/*COR DE FUNDO DA NAVBAR*/
+
+.navbar {
+    background-color: var(--background-branco);
+    box-shadow: 1px 0 10px 0 rgba(0,0,0,0.05);
+}
+
+/*PADDING DA NAVBAR NO TAMANHO NORMAL*/
+
+.cont {
+    padding: 0px 100px;
+}
+
+.logo {
+    width: 8rem;
+}
+
+/*CSS DOS LINKS DA NAVBAR*/
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    letter-spacing: 1px;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-right: 4rem;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+/*EFEITO DE LINHA DOS LINKS NA NAVBAR E E TAMBÉM NOME DA CLASS DOS PRÓPRIOS LINKS (NÃO ESQUECER QUE MUDA A COR AQUI)*/
+
+.cool_link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--bacground-oficial);
+    transition: .3s;
+}
+
+.cool_link:hover::after {
+    width: 50%;
+    transition: .3s;
+}
+
+.cool_link {
+    color: #1576F5;
+}
+
+/*BOTÃO BAIXAR LATERAL*/
+
+.baixar {
+    background-color: var(--bacground-oficial);
+    color: #FFFFFF;
+    padding: 0.4rem;
+    width: 85px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;  
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.baixar:hover {
+    color: #FFFFFF;
+    transition: 1s;
+    background-color: var(--background-azul-claro);
+}
+
+/*FAZER O MENU-HAMBURGUER FICAR ESCONDIDO, APARECER SÓ QUANDO FOR 768PX*/
+
+.navbar-toggler {
+    display: none;
+    outline: 0;
+}
+
+/*NAVBAR LATERAL*/
+.navbar-nav {
+    margin-left: 0.5rem;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #1576F5;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1576F5;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 10%;
+    transition: .3s;
+}
+
+.download-nav {
+    background-color: #1576F5;
+    padding: 0.4rem;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;  
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.baixar-navbar{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.baixar-navbar:hover {
+    color: #FFFFFF;
+    transition: 1s;
+    background-color: #0E6EED;
+}
+
+/*RESPONSIVIDADE DA NAVBAR*/
+
+@media screen and (max-width: 1091px){
+    .navbar-toggler{
+        display: inline;
+    }
+    .links, .baixar {
+        display: none;
+    }
+    .logo {
+        width: 7rem !important;
+    }
+}
+
+@media screen and (max-width: 593px ) {
+    .cont{ 
+        padding: 3px 50px;
+    }
+}

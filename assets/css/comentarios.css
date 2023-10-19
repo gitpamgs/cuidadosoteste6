@@ -1,0 +1,868 @@
+/* -- CODIGO PADRÃO ? -- */
+#comentarios {
+    background-color: #1576F5;
+}
+
+/*
+
+#ondaBranca {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    margin-top: -45px;
+    background-color: transparent;
+} */
+
+#ondaAzul {
+    width: 100%;
+    z-index: 0;
+    margin-top: -2px;
+}
+
+.shapeC{
+-moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+position: absolute;
+top: -10px;
+}
+
+.shapeBolinhaCima{
+position: absolute;
+top: 40px;
+left: 1300px;
+width: 110px;
+height: 110px;
+
+}
+
+.shapeBolinhaBaixo{
+    position: absolute;
+    top: 700px;
+    left: 100px;
+    width: 110px;
+    height: 110px;
+}
+
+
+/* -- COMENTARIOS -- */
+
+.coments-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.info-coments{
+ height: 300px;
+ width: 565px;
+display: grid;
+margin: 30px 30px 30px 30px;
+}
+
+.info-coments h5{
+    color: #e3efff;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-top: 5vh;
+}
+
+.pText-info{
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.pText-info2{
+    padding-top: 5px;
+    color: #ffffff;
+    font-size: 17px;
+    width: 75%;
+    height: 60px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*imagem - comentarios*/
+.perfil-card{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: -380px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10rem;
+    background-color: #ffffff;
+}
+
+.perfil-card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10rem;
+}
+
+
+.card-image{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+    
+}
+
+#contador{
+    display: none;
+}
+
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1576F5;
+}
+/*cards - comentarios*/
+.coments{
+   width: 500px;
+   height: 500px;
+   position: relative;
+   top: 20px;
+   margin: 70px 70px 70px 90px;
+}
+
+
+.card{
+    background-color: #fff;
+    width: 77%;
+    height: 70%;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: -ms-grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6rem;
+    font-size: 2rem;
+    color: #00000080;
+    box-shadow: 0 5px 10px 0 #0000005d, 0 15 20 0 #000000d3;
+    transition: transform 200ms;
+    padding: 60px 0px 20px 90px;
+}
+
+/*botões - comentarios*/
+.botoes-vaivolta{
+    display: flex;
+    padding: 0 100px 40px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-card-voltar, .btn-card-avançar{
+color: #aec3df;
+position:static;
+cursor: pointer;
+margin-left: 280px;
+}
+
+.btn-card-voltar:hover, .btn-card-avançar:hover{
+    color: #1576F5;
+}
+
+.btn-card-voltar, .btn-card-avançar{
+    border: 0;
+    background-color: #00000000;
+    border-radius: 50%;
+}
+
+
+/*textos - comentarios*/
+
+.card-tit {
+    font-size: 30px !important;
+}
+.card p{
+margin-right: 90px;
+color: #1576F5;
+font-size: 16px;
+}
+
+/*
+.card h5{
+    margin-left: 10px;
+    margin-top: 85px;
+    color: #5ea0f7;
+    font-size: 15px;
+}*/
+
+.pText{
+    margin-top: -10px;
+    color: #1576F5;
+    font-size: 0.9rem !important;
+    width: 320px;
+    height: 160px;
+    text-align: left;
+}
+
+/*animações - comentarios*/
+.card:nth-last-child(n+3){
+    --y: calc(-10% - 80px);
+    transform: translate(-30%, var(--y)) scale(1.05);
+    box-shadow: 0 0 1px 1px #00000003;
+    background-color: #E7E7E7;
+}
+
+.card:nth-last-child(2){
+    --y: calc(-10% - 105px);
+    transform: translate(-40%, var(--y)) scale(1.05);
+    background-color: #F2F2F2;
+}
+
+.card:nth-last-child(1){
+    --y: calc(-50% + 15px);
+    transform: translate(-50%, var(--y)) scale(1.05);
+    background-color: #fff;
+    
+}
+
+@keyframes swap {
+    50% {
+        transform: translate(- 100%, calc(var(--y) - 225px)) scale(0.85) rotate(-5deg);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translate(-50%, calc(var(--y) - 13.5px)) scale(0.82);
+        z-index: -1;
+    }
+}
+
+@keyframes swapV {
+    50% {
+      transform: translate(0, calc(var(--y) - 225px)) scale(0.85) rotate(5deg);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translate(-50%, calc(var(--y) - 13.5px)) scale(0.82);
+      z-index: -1;
+    }
+  }
+
+  @media screen and (max-width: 1100px){
+    .coments-container{
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        width: 90%;
+        min-height: 60%;
+        top: 50%;
+        left: 30%;
+    }
+
+    .info-coments h5{
+        font-size: 1.2rem;
+        margin-top: 5vh !important;
+    }
+    
+    .pText-info{
+        font-size: 2.3rem;
+    }
+/*
+    .shapeBolinhaCima{
+        position: absolute;
+        top: 40px;
+        left: 900px;
+        width: 110px;
+        height: 110px;
+        
+        }
+        
+        .shapeBolinhaBaixo{
+            position: absolute;
+            top: 600px;
+            left: 300px;
+            width: 110px;
+            height: 110px;
+        }*/
+
+        .pText-info2 {
+            font-size: 16px;
+        }
+  }
+
+  @media screen and (max-width: 1000px){
+      
+    .card{
+        width: 97%;
+        min-height: 65%;
+        top: 50%;
+        left: 30%;
+        border-radius: 5rem;
+        padding: 60px 0px 10px 80px;
+    }
+
+  }
+
+  @media screen and (max-width: 1152px){
+      
+    .card{
+        width: 82% !important;
+        min-height: 65%;
+        top: 50%;
+        left: 30%;
+        border-radius: 5rem;
+        padding: 60px 0px 10px 80px;
+    }
+
+  }
+
+@media screen and (max-width:1024px){
+
+    .info-coments h5 {
+        margin: 20px !important;
+    }
+    .card-image {
+        width: 115px;
+        height: 115px;
+    }
+    .perfil-card{
+        margin-left: 160px;
+    }
+    .info-coments h5 {
+        font-size: 0.8rem;
+    }
+    .pText-info {
+        font-size: 2rem;
+    }
+    .pText-info2 {
+        font-size: 0.8rem;
+    }
+    .card {
+        left: 25%;
+        padding: 60px 0px 10px 100px;
+        width: 80% !important;
+        border-radius: 4rem !important;
+    }
+    .card-tit {
+        font-size: 1.6rem !important;
+    }
+    .pText{
+        margin-right: 95px !important;
+        font-size: 13px !important;
+        width: 280px !important;
+    }
+    .botoes-vaivolta{
+        margin-left: -90px !important;
+        margin-top: -3px;
+         }
+}
+
+@media screen and (max-width: 800px){
+    .card {
+        transition: none !important;
+        transform: none !important;
+        margin-left: -40% !important;
+        margin-top: -30% !important;
+    }
+  
+}
+
+@media screen and (max-width:800px){
+    .card {
+        margin-left: -40% !important;
+    }
+
+    .info-coments h5 {
+        margin-top: 15% !important;
+    }
+    
+}
+@media screen and (max-width:712px){
+    .card {
+        margin-left: -50% !important;
+    }
+}
+@media screen and (max-width:700px){
+    .card {
+        margin-left: -45% !important;
+    }
+}
+
+@media screen and (max-width:690px){
+    .card {
+        margin-left: -60% !important;
+    }
+}
+
+@media screen and (max-width:570px){
+    .card {
+        margin-left: -65% !important;
+    }
+  
+}
+
+
+@media screen and (max-width: 539px){
+    .info-coments h5 {
+        font-size: 13px !important;
+    }
+    .pText-info {
+        font-size: 25px !important;
+        margin: 0px;
+
+    }
+    .pText-info2 {
+        font-size: 11px;
+    }
+    .coments {
+        width: 70% !important;
+        height: 300px !important;
+    }
+    .card {
+        
+        height: 25vh !important;
+        border-radius: 3rem !important;
+        padding: 50px 0px 0px 10px !important;
+        margin-top: -12vh !important;
+       left: 75% !important;
+        text-align: left !important;
+    }
+    
+    .info-coments {
+        width: 82% !important;
+    }
+
+    .botoes-vaivolta {
+        margin-left: -150px !important;
+        margin-top: -1vh !important;
+        padding: 0px 0px 50px 0px ;
+    }
+    .perfil-card{
+        margin-top : -26vh !important;
+        margin-left: 170px !important;
+    }
+    .card-image {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .pText {
+        width: 170px !important;
+        font-size: 10px !important;
+        margin: 0px 0px 0px 0px !important;
+    }
+   
+    .card-tit{
+        margin: 10px 0px 0px 10px !important;
+        padding: 0px !important;
+        width: 200px !important;
+        font-size: 1.2rem !important;
+    } 
+      
+
+}
+
+  @media screen and (max-width:990px){
+
+    .card{
+        width: 100% !important;
+        top: 50%;
+        left: 25%;
+    }
+
+    .info-coments h5{
+        font-size: 1rem;
+        margin-top: 5vh;
+    }
+    
+    .pText-info{
+        font-size: 2.3rem;
+    }
+
+    .pText-info2 {
+        font-size: 13px;
+    }
+  }
+
+
+
+/*responsividade - comentarios*/
+
+@media screen and (max-width: 912px){
+    .card{
+        width: 70% !important;
+        border-radius: 4rem;
+        padding: 60px 0px 0px 80px;
+        top: 25% !important;
+        left: 70%;
+        text-align: left !important;
+        
+    }
+    #ondaAzul {
+        margin-top: -10vh !important;
+    }
+
+    .coments-container{
+        display:block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textP2 {
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        display: flex;
+        width: 100%;
+    }
+   
+    .pText-info2 {
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        display: flex;
+        width: 100%;
+    }
+
+    .info-coments{
+        height: 100%;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       }
+
+       #comentarios {
+        width: 100vw !important;
+       }
+
+       .info-coments h5 {
+        margin-top: 5vh !important;
+       }
+
+@media screen and (max-width: 890px){
+    #ondaAzul {
+        margin-top: -15vh !important;
+    }
+}
+
+
+@media screen and (max-width: 393px){
+    
+    .info-coments h5 {
+        font-size: 11px;
+    }
+    .pText-info {
+        font-size: 25px;
+        margin: 0px;
+
+    }
+    .pText-info2 {
+        font-size: 11px;
+    }
+    .coments {
+        width: 50% !important;
+        height: 300px !important;
+    }
+    .card {
+        
+        width: 70vw !important;
+        border-radius: 4rem;
+        padding: 20px 0px 0px 0px !important;
+        top: 20% !important;
+        margin-left: -85% !important;
+        text-align: left !important;
+    }
+    
+    .info-coments {
+        width: 82% !important;
+    }
+
+    .botoes-vaivolta {
+        margin-left: -100px !important;
+        margin-top: -3vh !important;
+        padding: 0px 0px 20px 0px ;
+    }
+    .perfil-card{
+        margin-top : -25vh !important;
+        margin-left: 190px !important;
+    }
+    .card-image {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .pText {
+        width: 190px !important;
+        font-size: 10px !important;
+        margin: 0px 0px 0px 0px !important;
+    }
+   
+    .card-tit{
+        margin: 10px 0px 0px 10px !important;
+        padding: 0px !important;
+        width: 200px !important;
+    } 
+}
+
+
+@media screen and (max-width: 360px){
+    .card {
+            margin-top: -11vh !important;
+    }
+    .perfil-card{
+        top : 25vh !important;
+        margin-left: 190px !important;
+    }
+    
+    .info-coments h5 {
+        font-size: 11px;
+    }
+    .pText-info {
+        font-size: 25px;
+        margin: 0px;
+
+    }
+    .pText-info2 {
+        font-size: 11px;
+    }
+    .coments {
+        width: 50% !important;
+        height: 300px !important;
+    }
+    .card {
+        
+        width: 70vw !important;
+        border-radius: 4rem;
+        padding: 20px 0px 0px 0px !important;
+        top: 20% !important;
+        margin-left: -85% !important;
+        text-align: left !important;
+    }
+    
+    .info-coments {
+        width: 82% !important;
+    }
+
+    .botoes-vaivolta {
+        margin-left: -100px !important;
+        margin-top: -3vh !important;
+        padding: 0px 0px 20px 0px ;
+    }
+    .perfil-card{
+        margin-top : -25vh !important;
+        margin-left: 190px !important;
+    }
+    .card-image {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .pText {
+        width: 190px !important;
+        font-size: 10px !important;
+        margin: 0px 0px 0px 0px !important;
+    }
+   
+    .card-tit{
+        margin: 10px 0px 0px 10px !important;
+        padding: 0px !important;
+        width: 200px !important;
+    } 
+}
+
+/*
+
+@media screen and (max-width:600px) {
+    .coments {
+        width: 60% !important;
+    }
+
+    .card{
+        width: 80% !important;
+        border-radius: 3.5rem;
+        padding: 50px 0px 0px 90px;
+       
+    }
+
+    .card-image {
+        width: 115px;
+        height: 115px;
+    }
+
+    .perfil-card{
+        margin-left: 190px;
+    }
+
+    .pText {
+        font-size: 12px !important;
+        width: 260px;
+    }
+
+    .botoes-vaivolta{
+       margin-left: -90px !important;
+       margin-top: -3px;
+        }
+    
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .info-coments{
+        width:85%;
+       }
+
+       .card{
+        width: 70% !important;
+        border-radius: 3rem !important;
+        left: 39% !important;
+        padding: 50px 0px 0px 90px;
+    }
+
+    .card-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .perfil-card{
+        margin-left: 110px;
+    }
+
+    .pText {
+        font-size: 10px !important;
+        width: 200px !important;
+    }
+
+    .botoes-vaivolta{
+       margin-left: -150px !important;
+        }
+}
+
+@media screen and (max-width: 400px){
+    .card {
+        left: 30% !important;
+    }
+
+}
+
+
+@media screen and (max-width: 450px){
+    .info-coments{
+        width:85%;
+       }
+
+       .card{
+        width: 85% !important;
+        padding: 50px 0px 0px 100px;
+        border-radius: 2.5rem;
+        left:30% !important;
+    }
+
+    .card-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .perfil-card{
+        margin-left: 110px;
+    }
+
+    .pText {
+        font-size: 10px !important;
+        width: 200px;
+    }
+
+    .botoes-vaivolta{
+       margin-left: -140px !important;
+        }
+
+        .pText-info {
+            font-size: 1.5rem;
+        }
+
+        .pText-info2{
+            font-size: 12px;
+        }
+
+        .card-tit {
+            font-size: 1.2rem !important;
+        }
+
+        .info-coments h5 {
+            font-size: 12px;
+        }
+
+}
+
+@media screen and (max-width:380px){
+    .card {
+        left:30% !important;
+    }
+
+    #ondaAzul {
+        margin-top: -18vh !important;
+    }
+    .pText {
+        width: 140px !important;
+        font-size: 8px !important;
+        margin-left: -5% !important;
+    }
+    .botoes-vaivolta {
+        margin-right: 70% !important;
+    }
+    .perfil-card {
+        margin-left: 100px !important;
+        
+    }
+    .card-tit{
+        margin-left: -5% !important;
+    }
+}
+    /*
+    
+
+    .card:nth-last-child(n+3){
+        --y: calc(-50% - 15px);
+        transform: translate(-50%, var(--y)) scale(0.95);
+        box-shadow: 0 0 1px 1px #00000003;
+        background-color: #E7E7E7;
+    } 
+    
+    .card:nth-last-child(2){
+        --y: calc(-50%);
+        transform: translate(-50%, var(--y)) scale(1);
+        background-color: #F2F2F2;
+    }
+    .card:nth-last-child(1){
+        --y: calc(-50% + 15px);
+        transform: translate(-50%, var(--y)) scale(1.05);
+        background-color: #fff;
+    }
+
+    @keyframes swap {
+        50% {
+            transform: translate(-50%, calc(var(--y) - 250px)) scale(0.85) rotate(-5deg);
+            animation-timing-function: ease-in;
+        }
+        100% {
+            transform: translate(-50%, calc(var(--y) - 15px)) scale(0.85);
+            z-index: -1;
+        }
+    } */
+
+}
+
+

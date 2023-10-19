@@ -1,0 +1,798 @@
+/* -- CODIGO PADRÃO ? -- */
+#mouseImg {
+    margin-left: 60%;
+    margin-top: -10%;
+    width: 15%;
+}
+
+#mulher {
+    display: none;
+}
+
+#qSomosh1 {
+    text-align: center;
+    color: #1576F5;
+}
+
+#qSomosh6 {
+    color: #1576F5;
+    text-align: center;
+    font-size: 15px;
+}
+
+#quemsomos{
+    height: 100%;
+    width: 100%;
+}
+
+#quemsomos{
+    background-color: #fff;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20rem;
+}
+
+.shapeC{
+position: absolute;
+top: -10px;
+}
+
+.qsomos-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+ /* -- area direita da tela -- */
+.qsomos{
+    background-color: #ffffff;
+    width: 55%;
+    height: 100%;
+}
+
+.areabotoes {
+    margin-top: -37.5%;
+    display: block;
+    background-color: transparent;
+}
+
+.tabela{
+    box-shadow: 2px 2px 8px 1px rgb(128, 127, 127);
+    border-radius: 0.5rem;
+    width: 680px;
+    height: 441.31px;
+    left: 45%;
+    top: 20%;
+    z-index: 0;
+}
+
+.caixatexto p{
+    position: absolute;
+    z-index: 0;
+    color: #1576F5;
+    font-size: 17px;
+    width: 670px;
+    text-align: justify;
+    margin-top: 7%;
+    padding: 1rem;
+}
+
+.caixatexto{
+    justify-content: center;
+    height: auto;
+    left: 47%;
+    top: 43%;
+    
+}
+
+.mudanome{
+    position: absolute;
+    justify-content: center;
+    height: auto;
+    left: 47%;
+    top: 24.5%;
+}
+
+.mudanome p{
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    width: 610px;
+    text-align: center;
+}
+
+ /* -- area esquerda da tela -- */
+ .qsomos-info{
+    background-color: #ffffff;
+    width: 45%;
+    height: 100%;
+   margin-top: -15vh;
+}
+
+.Imgfull{
+    background-color: transparent;
+    height: auto;
+    width: 400px;
+    top: 13%;
+    left: 8.5%;
+}
+ 
+.mudabusca{
+    z-index: 1;
+    justify-content: center;
+    height: auto;
+    right: 62.9%;
+    top: 38.9%;
+}
+
+.mudabusca p{
+    
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    width: 350px;
+    text-align:start;
+}
+
+.button {
+    border-width: 0.5px 0px 0px 0px;
+    border-color: #d0d6dd;
+    background-color: transparent;
+    width: 398px;
+    height: 53px;
+    z-index: 1;
+    left: 8.6%;
+    text-align:left;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 1.2rem;
+}
+
+.button:hover{
+    background-color: #F8F8F8;
+    color: #1576F5;
+}
+
+.button:nth-child(1){
+    top: 46.4%;
+}
+
+.button:nth-child(2){
+    top: 55%;
+}
+
+.button:nth-child(3){
+    top: 62.8%;
+}
+
+.button:nth-child(4){
+    top: 71.5%;
+    border-radius: 0px 0px 32px 32px;
+}
+
+#alterarbusca {
+    color: #fff;
+    margin-left: 40%;
+    z-index: 1;
+    margin-top: 16vh !important;
+    position: absolute;
+    font-size: 2.5rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1800px){
+    .areabotoes {
+        margin-top: -41%;
+    }
+
+   .caixatexto p {
+    width: 645px !important;
+   }
+}
+
+
+
+@media screen and (max-width: 1820px){
+    #quemsomos {
+        padding: 19rem;
+    }
+
+    .areabotoes {
+        margin-top: -22vh;
+    }
+}
+
+@media screen and (max-width: 1700px){
+    .areabotoes {
+        margin-top: -45%;
+    }
+
+    #mouseImg {
+        margin-left: 73%;
+    }
+
+    
+.tabela{
+    width: 800px !important;
+    left: 60%;
+
+}
+
+.caixatexto p {
+    font-size: 17px;
+    width: 580px;
+}
+}
+
+@media screen and (max-width: 1930px){
+    
+    .caixatexto p {
+        font-size: 15px !important;
+      
+    }
+
+    .tabela {
+        width: 40vw !important;
+        min-height: 10vh !important;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1790px){
+    #quemsomos {
+        padding: 17rem;
+    }
+
+    .areabotoes {
+        margin-top: -20vh;
+    }
+}
+
+
+@media screen and (max-width: 1600px){
+    #quemsomos {
+        padding: 16rem !important;
+    }
+    .areabotoes {
+        margin-top: -28.5vh !important;
+    }
+
+}
+
+@media screen and (max-width: 1690px){
+    #quemsomos {
+        padding: 19rem;
+    }
+
+    .caixatexto p {
+        width: 590px !important;
+    }
+
+}
+
+@media screen and (max-width: 1660px){
+    #quemsomos {
+        padding: 17rem;
+    }
+
+    .areabotoes {
+        margin-top: -42.3%;
+    }
+
+    #mouseImg {
+        margin-left: 68%;
+    }
+    .caixatexto p{
+        width: 590px !important;
+    }
+}
+
+
+@media screen and (max-width: 1530px){
+
+    .areabotoes {
+        margin-top: -23vh !important;
+    }
+
+    .caixatexto p {
+        width: 580px !important;
+    }
+
+}
+
+@media screen and (max-width: 1500px){
+    #quemsomos {
+        padding: 13rem !important;
+    }
+}
+
+@media screen and (max-width: 1599px){
+    #quemsomos {
+        padding: 15rem;
+    }
+
+    .areabotoes {
+        margin-top: -20vh !important;
+    }
+
+    #mouseImg {
+        margin-left: 68%;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    #quemsomos {
+        padding: 11rem !important;
+    }
+
+    .areabotoes {
+        margin-top: -20vh !important;
+    }
+    .tabela {
+        width: 50vw !important;
+    }
+
+    #alterarbusca {
+        margin-left: 43%;
+        margin-top: 17vh !important;
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1490px){
+    #quemsomos {
+        padding: 10rem;
+    }
+
+    .caixatexto p {
+        width: 580px !important;
+    }
+}
+
+@media screen and (max-width: 1390px){
+    #quemsomos {
+        padding: 10rem !important;
+    }
+
+    .caixatexto p {
+        width: 580px !important;
+    }
+}
+
+@media screen and (max-width: 1366px){
+    #quemsomos {
+        padding: 8rem !important;
+    }
+    .areabotoes {
+        margin-top: -32vh !important;
+    }
+
+    .Imgfull {        
+        width: 370px;
+        margin-top: 10vh !important;
+    }
+    .qsomos-info {
+        background-color: transparent;
+    }
+    
+.tabela{
+    height: 400px !important;
+}
+.caixatexto p {
+    width: 540px !important;
+}
+
+.button {
+    width: 369px;
+    height: 50px;
+    z-index: 1;
+    left: 8.6%;
+    text-align:left;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+#alterarbusca {
+    margin-left: 45% !important;
+
+    }
+}
+
+@media screen and (max-width: 1280px){
+    #quemsomos {
+        padding: 6rem;
+    }
+
+    .caixatexto p {
+        width: 510px !important;
+    }
+
+    .tabela {
+        height: 410px !important;
+    }
+
+    .Imgfull {
+        margin-top: 1vh !important;
+    }
+
+    .areabotoes {
+        margin-top: -22.5vh !important;
+    }
+
+    #alterarbusca {
+        margin-left: 43%;
+        margin-top: 16vh !important;
+        }
+}
+
+@media screen and (max-width: 1100px){
+    #quemsomos {
+        padding: 2rem;
+    }
+
+    .areabotoes {
+        margin-top: -45.4%;
+    }
+
+    .caixatexto p {
+        margin-top: 10%;
+        width: 560px !important;
+    }
+
+    #mouseImg {
+        margin-left: 75%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #quemsomos {
+        padding: 1rem;
+    }
+    .areabotoes {
+        margin-top: -48.5%;
+    }
+    .caixatexto p {
+        width: 520px !important;
+    }
+    #mouseImg {
+        margin-left: 80% !important;
+    }
+}
+
+@media screen and (max-width:1680px){
+    #quemsomos {
+        padding: 18rem;
+    }
+    .areabotoes {
+        margin-top: -44%;
+    }
+    .caixatexto p {
+        width: 590px !important;
+    }
+  
+}
+
+
+@media screen and (max-width:1152px){
+    #quemsomos {
+        padding: 6rem !important;
+    }
+    .areabotoes {
+        margin-top: -46.8% !important;
+    }
+    .caixatexto p {
+        width: 520px !important;
+        font-size: 17px !important;
+    }
+    #mouseImg {
+        margin-left: 80% !important;
+    }
+    .qsomos-container {
+        margin-top: 18vh;
+    }
+
+    #alterarbusca {
+        margin-left: 48% !important;
+        margin-top: 16.7vh !important;
+        font-size: 1.8rem; 
+    }
+
+    #alterartitulo {
+        width: 10px !important;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 1024px){
+    #quemsomos {
+        padding: 6rem !important;
+    }
+
+    #alterarbusca {
+        margin-left: 46% !important;
+        margin-top: 16vh !important;
+    }
+    .areabotoes {
+        margin-top: -26vh !important;
+    }
+    .button {
+        height: 39px !important;
+        width: 297px !important;
+        padding: 0.8rem !important;
+
+    }
+
+    #alterartitulo {
+       visibility: hidden;
+    }
+
+    .tabela {
+        width: 480px !important;
+        height: 300px !important;
+    }
+
+    .caixatexto p {
+        font-size: 13px !important;
+        margin-top: 6% !important;
+        width: 450px !important;
+    }
+    #mouseImg {
+        margin-left: 65% !important;
+    }
+
+    .Imgfull {
+        width: 300px !important;
+        margin-top: -3vh !important;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+    #alterarbusca {
+        left: 10vw !important ;
+    }
+    .areabotoes {
+        width: 70vw !important;
+        margin-left: 0vw !important;
+    }
+    .button {
+        width: 70vw !important;
+    }
+    #alterar {
+        width: 70vw !important;
+        margin-left: 50vw !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #qSomosh1 {
+        font-size: 35px !important;
+        margin-top: -5vh !important;
+    }
+    #qSomosh6 {
+        font-size: 13px !important;
+    }
+}
+
+@media screen and (max-width: 680px){
+    #alterar {
+        left: 17%;
+    }
+    #quemsomos {
+        height: 100vh !important;
+        margin-top: -20vh !important;
+    }
+    #mulher {
+        width: 30vw !important;
+        margin-top: 2vh !important;
+    }
+    #alterarbusca {
+        left: 5% !important ;
+    }
+    #quemSomosOndaCima {
+     display: none;
+    }
+
+}
+
+@media screen and (max-width: 712px){
+    #mulher {
+        width: 36vw !important;
+    }
+
+    #alterarbusca {
+        margin-top: 18vh !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #quemsomos {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin-top: -15vh;
+        z-index: 0 !important;
+    }
+
+    #mulher {
+        margin-top: 5.4vh;
+        display: flex;
+        z-index: 1 !important;
+        margin-left: 40%;
+        position: absolute;
+        
+        }
+    .qsomos-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    #qSomosh1 {
+        font-size: 3rem;
+    }
+    #qSomosh6 {
+        font-size: 17px ;
+    }
+    .Imgfull {
+      display: none;
+    }
+    .areabotoes {
+        margin-left: 40%;
+        border:  1px solid black;
+        width: 50vw ;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .button {
+        height: 50px !important;
+        padding: 0.7rem !important;
+        width: 50vw ;
+        
+    }
+    #alterar {
+        margin-top: -1.3vh !important;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin: 0px 0px 0px 0px !important;
+        margin-left: 14.1vw;
+        width: 50vw;
+    }
+    #mouseImg {
+       display: none;
+    }
+    .tabela {
+       display: none;
+    }
+    .caixatexto p{
+        font-size: 15px !important;
+        text-align: justify;
+        padding: 70px 30px 30px 30px;
+        color: black;
+    }
+    #alterarbusca {
+        color: black;
+        margin-left: 30% !important;
+        
+    }
+}
+
+@media screen and (max-width:787px){
+    #alterar {
+        margin-left: 13.4vw ;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Imgfull {
+        min-width: 230px !important;
+        margin-left: 20%;
+        margin-top: -25vh !important;
+    }
+    .caixatexto p {
+       margin-top: 7vh !important;
+       font-size: 9px !important;
+       width: 66vw !important;
+       margin-left: -1vw !important;
+    }
+    .areabotoes{
+        margin-top: -14.7vh !important;
+        margin-left: 20% !important;
+    }
+    .button {
+        font-size: 11px;
+        height: 20px !important;
+       width: 46vw !important;
+    }
+    #mouseImg {
+        width: 10vw !important;
+        margin-left: 45vw !important;
+        margin-top: -6vw !important;
+    }
+
+    .tabela {
+        min-width: 60vw !important;
+        margin-left: 2vw !important;
+        height: 30vh !important;
+    }
+
+    #alterarbusca {
+        width: 20px ;
+        margin-top: -10px  !important;
+        margin-left:30vh !important;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .Imgfull {
+        margin-left: -5% !important;
+        min-width: 210px !important;
+    }
+    .tabela {
+        margin-left: -5vw !important;
+    }
+    .caixatexto p {
+        margin-left: -8vw !important;
+        margin-top: 5vh !important;
+    }
+    .areabotoes {
+        margin-top: -12vh !important;
+        margin-left: -2% !important;
+    }
+    .button {
+        font-size: 10px;
+        height: 20px !important;
+        width: 51vw !important;
+        padding: 0.5rem !important;
+    }
+    #alterartitulo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px){
+
+    #qSomosh1 {
+        font-size: 25px !important;
+    }
+
+    #mulher {
+        margin-top: 5vh !important;
+    }
+
+    #qSomosh6 {
+        font-size: 11px !important;
+    }
+
+    .areabotoes {
+        margin-top: -22vh !important;
+    }
+    .button {
+        width: 50vw !important;
+    }
+    #alterar{
+        font-size: 7.5px !important;
+    }
+
+    #alterarbusca {
+        margin-top: 15vh !important;
+        font-size: 15px !important;
+    }
+
+    .caixatexto p{
+        padding: 30px 20px 20px 20px;
+       }
+
+}
+

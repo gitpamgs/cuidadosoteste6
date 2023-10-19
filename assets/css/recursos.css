@@ -1,0 +1,636 @@
+:root {
+    --font-quicksand: 'Quicksand', sans-serif;
+    --font-comfortaa:  'Comfortaa', cursive;
+    --background-branco: #FFFFFF;
+    --bacground-oficial: #1576F5;
+    --background-azul-claro: #0E6EED;
+}
+
+
+
+/* ------------ ESTILIZAÇÃO DAS SEÇÕES COLORIDAS */
+
+.monitorar, .alarme, .sos  {
+    background-color: #0E6EED;
+}
+
+.alimentacao, .exercicios{
+    background-color: #1576F5;
+}
+
+
+.contei2 { /*  ===== QUANDO O TEXTO FOR LADO ESQUERDO ===== */ 
+    width: 100%;
+    height: 100vh;
+    background-color: #0E6EED;
+    margin-top: -2vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.box2{ /* ===== QUANDO O TEXTO FOR LADO ESQUERDO ===== */
+    width: 50%; 
+    background: transparent;
+}
+
+.box3{ /*  ===== IMAGEM DO LADO DIREITO ===== */ 
+    width: 30%;
+    height: auto;
+    background: transparent;
+}
+
+.box2 h1 {
+    color: #FFFFFF;
+    font-size: 2.3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.box2, h1, p {
+    padding: 10px;
+}
+
+.box2 p {
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px){
+    .box2 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1018px){
+    .box2 {
+        width: 90%;
+    }
+}
+
+.contai { /*  ===== QUANDO O TEXTO FOR LADO DIREITO ===== */ 
+    width: 100%;
+    height: 100vh;
+    background-color: #1576F5;
+    margin-top: -2vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.box h1 {
+    color: #FFFFFF;
+    font-size: 2.3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.box, h1, p {
+    padding: 10px;
+}
+
+.box p {
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.imagemSlide {
+    width: 30vw;
+}
+
+.box1{ /*  ===== IMAGEM DO LADO ESQUERDO ===== */ 
+    width: 40%;
+    height: auto;
+    background: transparent;   
+}
+
+
+
+.box { /* ===== QUANDO O TEXTO FOR LADO DIREITO ===== */
+    width: 50%;
+    background: transparent;
+}
+#imagemAli {
+    width: 18vw;
+}
+
+#imgEx{
+    width: 18vw;
+}
+
+#img2 {
+    width: 25vw;
+}
+
+#img4 {
+    width: 25vw;
+}
+
+@media screen and (max-width:1200px){
+    
+    #texto1 h1{
+        font-size: 2rem !important;
+    }
+
+    #texto2 h1{
+        font-size: 2rem !important;
+    }
+
+    #texto3 h1{
+        font-size: 2rem !important;
+    }
+
+    #texto4 h1{
+        font-size: 2rem !important;
+    }
+
+    #texto5 h1{
+        font-size: 2rem !important;
+    }
+
+    #texto1 p{
+        font-size: 1rem !important;
+    }
+
+    #texto2 p{
+        font-size: 1rem !important;
+    }
+
+    #texto3 p{
+        font-size: 1rem !important;
+    }
+
+    #texto4 p{
+        font-size: 1rem !important;
+    }
+
+    #texto5 p{
+        font-size: 1rem !important;
+    }
+
+    .contei2 {
+        height: 80vh !important;
+    }
+
+    .contai {
+        height: 80vh !important;
+    }
+    #img2 {
+        width: 25vw;
+    }
+}
+
+
+@media screen and (max-width: 1280px){
+    #imagemAli, #imgEx{
+        width: 20vw !important;
+    }
+    #texto1 p, #texto2 p, #texto3 p, #texto4 p {
+        font-size: 13px !important;
+    }
+    #texto1 h1, #texto2 h1, #texto3 h1, #texto4 h1 {
+        font-size: 1.8rem !important;
+    }
+    .contei2 {
+        height: 70vh !important;
+    }
+
+    .contai {
+        height: 70vh !important;
+    }
+}
+@media screen and (max-width: 1152px){
+    #imagemAli, #imgEx{
+        width: 20vw !important;
+    }
+    #texto1 p, #texto2 p, #texto3 p, #texto4 p {
+        font-size: 11px !important;
+    }
+    #texto1 h1, #texto2 h1, #texto3 h1, #texto4 h1 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #imagemAli, #imgEx{
+        width: 22vw !important;
+    }
+    #texto1 p, #texto2 p, #texto3 p, #texto4 p {
+        font-size: 11px !important;
+    }
+    #texto1 h1, #texto2 h1, #texto3 h1, #texto4 h1 {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media screen and (max-width: 1018px){
+
+    
+.box2{ /* ===== QUANDO O TEXTO FOR LADO ESQUERDO ===== */
+    width: 50%; 
+    background: transparent;
+}
+
+.box3{ /*  ===== IMAGEM DO LADO DIREITO ===== */ 
+    width: 30%;
+    height: auto;
+    background: transparent;
+}
+
+.box2 h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.box2, h1, p {
+    padding: 10px;
+}
+
+.box2 p {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.contei2 {
+    height: 65vh !important;
+}
+
+.contai {
+    height: 65vh !important;
+}
+
+#texto1 h1 {
+    font-size: 1.3rem !important;
+}
+
+#texto2 h1 {
+    font-size: 1.3rem !important;
+}
+
+#texto3 h1 {
+    font-size: 1.3rem !important;
+}
+
+#texto4 h1 {
+    font-size: 1.3rem !important;
+}
+
+#texto5 h1 {
+    font-size: 1.3rem !important;
+}
+
+#texto1 p{
+    font-size: 12px !important;
+}
+
+#texto2 p{
+    font-size: 12px !important;
+}
+
+#texto2 p{
+    font-size: 12px !important;
+}
+
+#texto2 p{
+    font-size: 12px !important;
+}
+
+#texto2 p{
+    font-size: 12px !important;
+}
+
+}
+
+@media screen and (max-width: 900px){
+    .contai, .contei2 {
+        height: 50vh !important;
+    }
+    .monitorar {
+        margin-top: 0.9vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #texto1 h1 {
+        font-size: 1.1rem !important;
+    }
+
+    #texto2 h1 {
+        font-size: 1.1rem !important;
+    }
+
+    #texto3 h1 {
+        font-size: 1.1rem !important;
+    }
+
+    #texto4 h1 {
+        font-size: 1.1rem !important;
+    }
+
+    #texto5 h1 {
+        font-size: 1.1rem !important;
+    }
+
+    #texto1 p{
+        font-size: 12px !important;
+    }
+
+    #texto2 p{
+        font-size: 12px !important;
+    }
+
+    #texto2 p{
+        font-size: 12px !important;
+    }
+
+    #texto2 p{
+        font-size: 12px !important;
+    }
+
+    #texto2 p{
+        font-size: 12px !important;
+    }
+
+    .img.imagemSlide.grid-image {
+        width: 40vw !important;
+    }
+
+    .contai, .contei2 {
+        height: 50vh !important;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    #texto1 h1 {
+        font-size: 16px !important;
+    }
+
+    #texto1 p{
+        font-size: 13px !important;
+    }
+
+    #img1 {
+        width: 40vw;
+    }
+
+    #texto2 h1 {
+        font-size: 16px !important;
+    }
+
+    #texto2 p{
+        font-size: 13px !important;
+    }
+
+    #img2 {
+        width: 32vw;
+    }
+
+    #texto3 h1 {
+        font-size: 16px !important;
+    }
+
+    #texto3 p{
+        font-size: 13px !important;
+    }
+
+    #img3 {
+        width: 36vw;
+    }
+
+    #texto4 h1 {
+        font-size: 16px !important;
+    }
+
+    #texto4 p{
+        font-size: 13px !important;
+    }
+
+    #img4 {
+        width: 32vw;
+    }
+
+    #texto5 h1 {
+        font-size: 16px !important;
+    }
+
+    #texto5 p{
+        font-size: 13px !important;
+    }
+
+    #img5 {
+        width: 37vw;
+    }
+
+    .contai, .contei2 {
+        height: 50vh !important;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .box2 {
+        width: 90%;
+    }
+
+    .box1 {
+        width: 90%;
+    }
+
+    .imagemSlide {
+        width: 100%;
+    }
+    #img1{
+        margin-top: -75vh; 
+        width: 47vw;
+    }
+
+    #texto1{
+        margin-top: 28vh;
+        height: 100px;
+    }
+
+    #texto1 h1{
+        font-size: 1.2rem !important;
+    }
+
+    #texto1 p{
+        font-size: 12px !important;
+    }
+
+    #img2{
+    
+        width: 42vw;
+    }
+
+    #imagemAli {
+        width: 40vw !important;
+    }
+    #imgEx {
+        width: 40vw !important;
+    }
+
+    #texto2{
+        margin-top: -10vh;
+        width: auto;
+        margin-left: 20px;
+    }
+
+    #texto2 h1{
+        font-size: 1.2rem !important;
+
+    }
+
+    #texto2 p{
+        font-size: 12px !important;
+    }
+
+    #img3{
+        margin-top: -70vh; 
+        width: 41vw;
+    }
+
+    #texto3{
+        margin-top: 28vh;
+        height: 100px;
+    }
+
+    #texto3 h1{
+        font-size: 1.2rem !important;
+    }
+
+    #texto3 p{
+        font-size: 12px !important;
+    }
+    
+    #img4{
+        width: 42vw;
+        margin-right: 10px;
+    }
+
+    #texto4{
+        margin-top: -5vh;
+        width: auto;
+        margin-left: 20px;
+    }
+
+    #texto4 h1{
+        font-size: 1.2rem !important;
+
+    }
+
+    #texto4 p{
+        font-size: 12px !important;
+    }
+    
+    #img5 {
+        margin-top: -80vh;  
+        width: 47vw;
+    }
+    #txt5{
+        margin-top: 35vh;
+        height: 100px;
+    }
+
+    #txtp5{
+        font-size: 13px !important;
+        margin-top: -5vh;
+    }
+
+    .contai, .contei2 {
+        height: 60vh !important;
+    }
+
+    
+}
+
+@media screen and (max-width: 490px){
+    .contai, .contei2 {
+        height: 60vh !important;
+    }
+
+    #img1 {
+        margin-top: -80vh;
+    }
+    #texto1{
+        margin-top: 22vh;
+        height: 100px;
+    }
+
+    #texto1 h1{
+        font-size: 13px !important;
+    }
+
+    #img2 {
+        margin-top: -5vh;
+        width: 40vw;
+    }
+
+    #texto2{
+        margin-top: -22vh;
+        height: 100px;
+    }
+
+    #exercicioimg {
+        margin-top: 7vh !important;
+    }
+
+    #texto2 h1{
+        font-size: 13px !important;
+    }
+    #img3 {
+        margin-top: -80vh;
+    }
+    #texto3{
+        margin-top: 22vh;
+        height: 100px;
+    }
+
+    #texto3 h1{
+        font-size: 15px !important;
+    }
+
+    #img4 {
+        margin-top: -5vh;
+        width: 40vw;
+    }
+    #texto4{
+        margin-top: -22vh;
+        height: 100px;
+    }
+
+    #texto4 h1{
+        font-size: 13px !important;
+    }
+
+    #img5 {
+        margin-top: -65vh;
+    }
+    #txt5{
+        margin-top: 30vh;
+        height: 100px;
+    }
+
+    #txtp5{
+        font-size: 13px !important;
+        margin-top: -5vh;
+    }
+
+    #ultimoslide {
+        width: 37vw;
+        margin-top: 7vh !important;
+        margin-left: 5vh;
+    }
+
+    #imgEx {
+        width: 37vw !important;
+    }
+
+    #imagemAli {
+        width: 37vw !important;
+        margin-left: 3vh;
+    }
+ 
+}

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <!--LINK ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   
+    
+    <!--LINK PARA O CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/recursos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/suporte.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/comentarios.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/quemsomos copy.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+
+    <!-- LINK PARA O JAVASCRIPT -->
+    <script src="assets/js/comentarios.js" defer></script>
+    <script src="assets/js/quemsomos.js"> </script>
+
+    <title>CUIDADOSO</title>
+
+</head>
+<body>  
+   
+<!-- NAVBAR FIXA NA PARTE DE CIMA -->    
+  <nav class="navbar fixed-top">
+
+      <div class="container-fluid cont">
+
+      <a class="navbar-brand" href="#"> <img class="logo" src="assets/imgs/logo/Logo.png"> </a>
+      <ul class="links">
+            <li><a href="#recursos" class="cool_link">Recursos</a></li>
+            <li><a href="#quemsomos" class="cool_link">Quem Somos</a></li>
+            <li><a href="#comentarios" class="cool_link">Comentários</a></li>
+            <li><a href="#suporte" class="cool_link">Suporte</a></li>
+      </ul>
+      <a class="baixar">Baixar</a>
+    
+      <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+         
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo" src="assets/imgs/logo/Logo.png"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+        
+      <!--NAVBAR FIXA LATERAL QUANDO ABRE O MENU HAMBURGUER-->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+              <li class="nav-item">
+                <a class="nav-link"  href="#recursos ">Recursos</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link"  href="#quemsomos">Quem Somos</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#comentarios">Comentários</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#suporte">Suporte</a>
+              </li>
+
+              <li class="download-nav">
+                <a class="baixar-navbar" href="#">Baixar</a>
+              </li>
+        </ul>
+
+  </div>
+  </div>
+  </div>
+  </nav>
+
+<!-- SECTION BANNER APRESENTAÇÃO -->
+
+<section class="banner">
+       
+  <section id="hero">
+      <h1>VISUALIZE UM AMBIENTE...</h1>
+      <p>no qual suas preocupações diárias serão diminuidas</p>
+      <a href="" class="baixar-btn"><i class="fa-solid fa-download"></i> Baixar</a>
+  </section>
+  
+</section>
+
+<!--SECTIONS DOS RECURSOS-->
+
+<section id="recursos">
+
+<section class="monitorar">
+
+  <div class="contei2 container" id="monitoramento"> <!-- ===== QUANDO O TEXTO FOR LADO ESQUERDO ===== -->
+    <div class="box2 text-group"  id="texto1">
+        <h1>monitorar um idoso se torna mais fácil com o nosso aplicativo</h1>
+        <p>com o nosso aplicativo você consiguirá acessar as informações do seu idoso, sendo assim, suas preocupações diminuirão.</p>
+    </div>
+    <div class="box3"   id="img1">
+      <img src="assets/imgs/recursos/slideum.png" class="imagemSlide grid-image">
+  </div>
+</div>
+  
+</section>
+
+<section class="alimentacao">
+
+  <div class="contai container" id="alimentacao"> 
+    <div class="box1"  id="img2">
+        <img src="assets/imgs/recursos/slidedoiss.png" class="imagemSlide" id="imagemAli">
+    </div>
+    <div class="box"  id="texto2">
+        <h1>com nosso aplicativo, o idoso terá acesso à receitas saúdaveis e fáceis de fazer</h1>
+        <p>para aquele idoso que gosta de cozinhar mas possui muitas restrições alimentares, o nosso aplicativo disponibiliza vários pratos fáceis e saúdaveis.</p>
+    </div>
+</div>
+  
+</section>
+
+<section class="alarme">
+
+  <div class="contei2 container" id="alarmes"> 
+    <div class="box2"  id="texto3">
+        <h1>muitos idosos têm problemas de memória e esquecem de tomar seus remédios</h1>
+        <p>com o cuidadoso esse problema será solucionado, você define um alarme para cada remédio que o idoso precisa tomar.</p>
+    </div>
+    <div class="box3"  id="img3">
+      <img src="assets/imgs/recursos/slidetres.png" class="imagemSlide" id="exercicioimg">
+  </div>
+</div>
+  
+</section>
+
+<section class="exercicios">
+
+  <div class="contai container" id="exercicios">
+    <div class="box1"  id="img4">
+        <img src="assets/imgs/recursos/slide4q.png" class="imagemSlide"  id="imgEx">
+    </div>
+    <div class="box"  id="texto4">
+        <h1>manter os idosos ativos também é cuidar da saúde deles</h1>
+        <p>os idosos precisam manter uma rotina ativa e cheia de atividades que estimulem seu sistema nervoso, aqui você encontrará vídeos de ótimos exercícios.</p>
+    </div>
+</div>
+  
+</section>
+
+<section class="sos">
+
+  <div class="contei2 container" id="sos"> 
+    <div class="box2"  id="texto4">
+        <h1 id="txt5">nosso aplicativo conta com a função do s.o.s para ajudar o idoso</h1>
+        <p id="txtp5">se caso aconteça algo e o idoso precise de ajuda de imediata, ele poderá acionar o botão s.o.s e rapidamente será ajudado.</p>
+    </div>
+    <div class="box3"  id="img5">
+      <img src="assets/imgs/recursos/slidecinco.png" class="imagemSlide" id="ultimoslide">
+  </div>
+</div>
+</div>
+
+</section> 
+<img src="assets/imgs/quemsomos/ondaazulof.png" id="quemSomosOndaCima">
+
+</section>
+
+<br> <br>
+
+<!--QUEM SOMOS -->
+<h1 id="qSomosh1"><b>nossa equipe</b></h1>
+<h6 id="qSomosh6">veja informações mais detalhadas sobre somos e o quais são nossos objetivos com a criação do aplicativo Cuidadoso.</h6>
+<img src="assets/imgs/quemsomos/Character.png" id="mulher">
+<section id="quemsomos">
+
+
+<!--SHAPE CURVED 
+<svg  class="shapeC" viewBox="0 0 1277 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M666.5 59.6724C476.012 32.3207 0.999512 0.172038 0.999512 0.172038H1298.29C1299.07 -0.215048 1298.5 0.172038 1298.5 0.172038H1298.29C1296.85 0.880054 1290.87 4.17812 1268.5 17.1724C1205.66 44.8078 1057.5 115.816 666.5 59.6724Z" fill="#1576F5" stroke="#0E6EED"/>
+</svg>-->
+
+<div class="qsomos-container">        
+
+    <div class="qsomos-info">
+
+        <!--barra de pesqusia q muda -->
+        <div class="mudabusca">
+            <p id="alterarbusca"> </p>   
+          </div>
+
+          <!--mulherzinha -->
+          
+        <img src="assets/imgs/quemsomos/full.png" alt="" class="Imgfull" >
+
+        <div class="areabotoes">
+        <button class="button" onclick="Qsomos()"> <i class="fa-regular fa-clock" id="faclock" style="color: #d8d1d1;"></i> quem somos </button>
+        <button class="button" onclick="Missão()"><i class="fa-regular fa-clock" style="color: #d8d1d1;"></i> missão </button>
+        <button class="button" onclick="Visão()"> <i class="fa-regular fa-clock" style="color: #d8d1d1;"></i> visão</button>
+        <button class="button" onclick="Valores()"> <i class="fa-regular fa-clock" style="color: #d8d1d1;"></i> valores</button>
+        </div>
+
+            <img src="assets/imgs/quemsomos/Pointer.png" id="mouseImg">
+
+    </div>
+
+    <div class="qsomos">
+
+         <!--titulo q muda -->
+        <div class="mudanome">
+            <p id="alterartitulo"> </p>   
+          </div>
+
+        <div class="caixatexto">
+          <p id="alterar">Nós cuidadoso, somos uma empresa de desenvolvimento de aplicativos comprometida em trazer uma vida ativa para os idosos por meio da tecnologia, contribuindo para sua saúde e bem-estar. Acreditamos que cada indivíduo, independentemente da idade, merece viver uma vida plena e significativa, e nosso objetivo é capacitar os idosos a aproveitarem ao máximo as oportunidades oferecidas pela era digital.</p>   
+        </div>
+       
+        <img src="assets/imgs/quemsomos/tabela.png" alt="" class="tabela" id="tabela">
+    </div>   
+</div>
+
+</section>
+<!-- SECTION COMENTÁRIOS -->
+
+
+<section id="comentarios">
+
+<!--SHAPE CURVED 
+<svg class="shapeC" xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1330 320"><path fill="#FFFFFF" fill-opacity="1" d="M0,32L80,32C160,32,320,32,480,58.7C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+--> 
+
+<div class="coments-container">
+
+   <!-- <svg class="shapeBolinhaCima" width="130" height="121" viewBox="0 0 130 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="25.5" cy="27.5" rx="25.5" ry="27.5" transform="matrix(-1 0 0 1 130 66)" fill="white" fill-opacity="0.46"/>
+        <ellipse cx="25.5" cy="27.5" rx="25.5" ry="27.5" transform="matrix(-1 0 0 1 95 0)" fill="white" fill-opacity="0.46"/>
+        <ellipse cx="16.5" cy="15.5" rx="16.5" ry="15.5" transform="matrix(-1 0 0 1 33 49)" fill="white" fill-opacity="0.46"/>
+        </svg>-->
+        
+        <div class="info-coments">
+            <h5>comentarios</h5>
+            <p class="pText-info">o que estão falando <br> sobre a cuidadoso?</p>
+            <p class="pText-info2">veja o que nossos usários acham do nosso aplicativo e como ele interfere de maneira positiva em seu dia-a-dia</p>
+        </div>
+<!--
+        <svg class="shapeBolinhaBaixo" width="130" height="121" viewBox="0 0 130 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="25.5" cy="27.5" rx="25.5" ry="27.5" transform="matrix(-1 0 0 1 130 66)" fill="white" fill-opacity="0.46"/>
+            <ellipse cx="25.5" cy="27.5" rx="25.5" ry="27.5" transform="matrix(-1 0 0 1 95 0)" fill="white" fill-opacity="0.46"/>
+            <ellipse cx="16.5" cy="15.5" rx="16.5" ry="15.5" transform="matrix(-1 0 0 1 33 49)" fill="white" fill-opacity="0.46"/>
+            </svg>-->
+
+        <div class="coments">
+            <div class="card" data-id="1" data-imagem="true">
+                <div class="perfil-card">
+                    <div class="card-image">
+                        <img src="assets/imgs/comentarios/idosacomentario1.jpg" class="card-img">
+                    </div>
+                </div>
+
+                <div class="info-card">
+                     <p class="card-tit">Olidia Alves</p>
+                     <p class="pText">Eu tenho usado o aplicativo Cuidadoso por algum tempo agora, e devo dizer que estou satisfeito com o quão útil ele é. Como manter-se ativo é importante para a saúde, o aplicativo oferece vários exercícios que são adequados para minha idade, isso me incentiva a me movimentar mais.</p>
+                </div>
+                
+                <div class="botoes-vaivolta">
+
+                    <div id="contador"></div>
+                      
+                    <button type="button" class="btn-card-avançar"onclick="swap()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                      </svg>                
+                    </button>   
+                </div>
+
+            </div>
+
+            <div class="card" data-id="2" data-imagem="false">
+              
+                <div class="perfil-card">
+                    <div class="card-image">
+                        <img src="assets/imgs/comentarios/mariaClara.jpg" class="card-img">
+                    </div>
+                </div>
+
+                <div class="info-card">
+               
+                     <p class="card-tit">Maria Clara</p>
+                     <p class="pText">
+                      O aplicativo Cuidadoso simplifica muitos aspectos do cuidado e melhora significativamente a qualidade de vida da minha avó. O recurso de lembretes de medicamentos ajuda muito. Agora, posso garantir que minha avó sempre tome seus remédios, sem que eu tenha que estar presente.</p>
+                </div>
+
+                <div class="botoes-vaivolta">
+                   
+                       
+                     <div id="contador"></div>
+                     <button type="button" class="btn-card-avançar"onclick="swap()" id="botso">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg>                
+                        </button>   
+                 </div>
+
+            </div>
+            <div class="card" data-id="3" data-imagem="false">
+                <div class="perfil-card">
+                    <div class="card-image">
+                        <img src="assets/imgs/comentarios/idosocomentario3.jpg" class="card-img">
+                    </div>
+                </div>
+
+                <div class="info-card">
+                     <p class="card-tit">José Silva</p>
+                     <p class="pText">Como idoso, preciso manter uma dieta saudável, e o Cuidadoso tornou todo o processo muito mais fácil. O que eu mais amo é a variedade de receitas deliciosas e saudáveis que ele oferece. Essas receitas são simples de seguir e me ajudaram a experimentar uma grande variedade de pratos nutritivos.</p>
+                </div>
+
+                <div class="botoes-vaivolta">
+                  
+                       
+                     <div id="contador"></div>
+
+                     <button type="button" class="btn-card-avançar"onclick="swap()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg>                
+                        </button>   
+                 </div>
+
+            </div>
+          </section>
+         <img src="assets/imgs/comentarios/ondaAzul.png" id="ondaAzul">
+
+<br> <br>
+
+<!-- SUPORTE FORMULARIO PARA ENVIAR DÚVIDAS -->
+
+<img src="assets/imgs/suporte/onda.png" id="onda">
+<!--
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1771E8" fill-opacity="1" d="M0,32L80,32C160,32,320,32,480,58.7C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+-->
+<div id="suporteee"></div>
+<section id="suporte">
+<section class="container suporte">
+    <div class="text-group">
+        <h1 id="title-suporte">
+            suporte - entre em contato conosco
+        </h1>
+        <p id="text-suporte">
+            entre em contato com nossa equipe de suporte e esclareça suas dúvidas em  <br>relação ao nosso aplicativo
+        </p>
+    </div>
+</section>
+
+<div class="center container suporteForms ">
+<form id="form-suporte" action="https://api.staticforms.xyz/submit" method="post"> <!--API PARA ENVIAR PARA O EMAIL-->
+
+  <div class="single-input suporteInputs">
+    <input required type="text" name="name" id="nome" class="input" autocomplete="off">
+    <label for="nome">Nome</label>
+</div>
+
+    <div class="single-input">
+        <input required type="email" name="email" id="email" class="input" autocomplete="off">
+        <label for="nome">Email</label>
+    </div>
+
+    <div class="single-input">
+        <input required type="text" name="message" id="assunto" class="input" autocomplete="off">
+        <label for="nome">Assunto</label>
+    </div>
+
+    <br>
+
+    <button class="botaosuporte" onclick="" type="submit" id="botao_suporte">enviar</button>
+   
+    
+    <input type="hidden" name="accessKey" value="fde85e37-9908-4c6d-87f6-51bbe1a0c394"> <!--PARTE DE ENVIAR A MENSAGEM PARA O EMAIL CUIDADOSO-->
+    <input type="hidden" name="redirectTo" value="http://localhost/tcc0/index.html">
+</form>
+
+<div class="foto-suporte">
+  <img src="assets/imgs/suporte/imagemSuporte.png">
+
+</div>
+</div>
+
+</section>
+
+<img src="assets/imgs/suporte/ondasuporte2.png" id="onda2"> <br> <br> <br> <br>
+
+<section class="duvidas container" id="duvidas-frequentes">
+  <div class="title-duvidas">
+    <h1>dúvidas frequentes</h1>
+  </div>
+  <br>
+
+<div class="faq">
+  <div class="question">
+    <h3>Como o nosso aplicativo pode contribuir para a saúde dos idosos?</h3>
+
+    <img src="assets/imgs/suporte/stroke.svg">
+
+   </div>
+   <div class="answear">
+    <p>Um aplicativo pode desempenhar um papel significativo na melhoria da saúde dos idosos, desde que seja projetado com cuidado e atenda às necessidades específicas desse grupo demográfico. Tais quais como: <br> <br>
+
+      Lembretes de medicamentos: Um recurso de lembretes de medicamentos ajuda os idosos a tomar seus medicamentos corretamente e a tempo, reduzindo assim os riscos de problemas de saúde devido à falta de adesão ao tratamento;
+      <br> <br>
+      Exercícios e atividades físicas: Nosso aplicativo oferece orientações sobre exercícios adequados para a idade e nível de condicionamento físico dos idosos, incentivando a atividade física regular para melhorar a mobilidade e a saúde cardiovascular;
+      <br> <br>
+      Nutrição: Ajudamos os idosos a monitorar sua dieta, oferecendo dietas de acordo com cada necessidade específica;
+      <br> <br>
+      Emergências médicas: Integramos o recurso de chamada de emergência para ajudar os idosos a obter ajuda rapidamente em caso de necessidade.
+      <br> <br>
+      É importante envolver os idosos na concepção e no desenvolvimento do aplicativo, levando em consideração suas preferências e necessidades específicas. Além disso, é fundamental garantirmos a privacidade e a segurança dos dados dos usuários, especialmente quando se trata de informações de saúde. 
+      </p>
+   </div>
+
+  </div>
+
+  
+<div class="faq">
+  <div class="question">
+    <h3>O aplicativo da Cuidadoso é de fácil acesso/utilização para os idosos?</h3>
+
+    <img src="assets/imgs/suporte/stroke.svg">
+
+   </div>
+   <div class="answear">
+    <p>A acessibilidade e a usabilidade de um aplicativo para idosos pode variar amplamente dependendo do design e das funcionalidades do aplicativo em questão. Portanto, para garantir que o nosso aplicativo seja de fácil acesso e utilização para pessoas da terceira, contamos com: <br> <br>
+
+      Interface Simples e Intuitiva: A interface do nosso aplicativo foi pensada e desenvolvida para ser limpa, simples e intuitiva. Os botões, ícones e letras são grandes e de fácil identificação para facilitar a interação do usuário com a tela; <br> <br>
+      
+      Navegação Lógica: A navegação deve ser direta e lógica. Sendo assim, desenvolvemos nosso aplicativo de modo que os idosos sejam capazes de encontrar rapidamente as funcionalidades e informações que precisam; <br> <br>
+      
+      Feedback Claro: Nossa aplicação fornece feedback visual e, também, sonoro, para indicar quando uma ação foi realizada com sucesso ou quando ocorreu um erro; <br> <br>
+      
+      Instruções Passo a Passo: Ao acessar nosso aplicativo pela primeira vez, tanto o usuário idoso quanto o usuário cuidador, será fornecido instruções passo a passo claras e simples através de um breve tutorial; <br> <br>
+      
+      Suporte Técnico Acessível: Fornecemos um meio de contato fácil, através do nosso site, e-mail e redes sociais ativas, caso os idosos encontrem problemas ou tenham dúvidas a serem esclarecidas. <br> <br>
+      
+      
+      </p>
+   </div>
+
+  </div>
+
+  
+<div class="faq">
+  <div class="question">
+    <h3>Como a Cuidadoso protege a privacidade dos usuários idosos?</h3>
+
+    <img src="assets/imgs/suporte/stroke.svg">
+
+   </div>
+   <div class="answear">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo eum est provident? Tempora laboriosam eius officiis est nemo nobis velit veritatis blanditiis, excepturi voluptate natus nam pariatur quo magnam.</p>
+   </div>
+
+  </div>
+
+  
+<div class="faq">
+  <div class="question">
+    <h3>Quais recursos sociais estão disponíveis nos aplicativos da Cuidadoso?</h3> 
+
+    <img src="assets/imgs/suporte/stroke.svg" id="svg">
+
+   </div>
+   <div class="answear">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo eum est provident? Tempora laboriosam eius officiis est nemo nobis velit veritatis blanditiis, excepturi voluptate natus nam pariatur quo magnam.</p>
+   </div>
+
+  </div>
+
+</section>
+
+
+<script src="assets/js/to-top"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/duvidas.js"></script>
+
+<!--
+<script src="assets/js/preloader.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> DEFINIR A DURAÇÃO DO EFEITO SCROLL NOS ELEMENTOS (TEXTO E IMAGEM) DAS SECTIONS EXPLICATIVAS 
+    <script>
+      AOS.init({
+        duration: 900
+      });
+    </script>
+    -->
+</div>   
+</div>
+
+<!--FOOTER -->
+<br> <br>
+<hr>
+<footer class="main-footer">
+
+  <div class="row container footerf">
+    <div class="info-box">
+      <h4 class="footer-title"><b>VISUALIZE UM AMBIENTE</b></h4>
+      <div class="linguagem">
+        <img src="./assets/imgs/footer/bandeira.jpg" class="imagemFooter">
+        <span>Portugues do Brasil</span>
+      </div>
+      <a href="#" class=" btn-small btn-brand">Baixar</a>
+    </div>
+  
+  <div class="spacer"></div>
+  
+  <div class="footer-links-group">
+    <h5 class="footer-title">Recursos</h5>
+    <a href="#monitoramento" class="footer-link">Monitoriamento</a>
+    <a href="#alimentacao" class="footer-link">Alimentação</a>
+    <a href="#alarmes" class="footer-link">Alarmes</a>
+    <a href="#exercicios" class="footer-link">Execicios</a>
+    <a href="#sos" class="footer-link">S.O.S</a>
+  </div>
+  
+  <div class="footer-links-group">
+    <h5 class="footer-title">Site</h5>
+    <a href="#recursos" class="footer-link">Recursos</a>
+    <a href="#quemsomos" class="footer-link">Quem somos</a>
+    <a href="#comentarios" class="footer-link">Comentários</a>
+    <a href="#suporte" class="footer-link">Suporte</a>
+  </div>
+  
+  <div class="footer-links-group">
+    <h5 class="footer-title">Redes sociais</h5>
+    <a href="#" class="footer-link">Instagram</a>
+    <a href="#" class="footer-link">Twitter</a>
+    <a href="#" class="footer-link">Facebook</a>
+  </div>
+  
+  <div class="footer-links-group">
+    <h5 class="footer-title">Informações</h5>
+    <a href="#suporte" class="footer-link">Fale conosco</a>
+    <a href="#duvidas-frequentes" class="footer-link">Duvidas frequentes</a>
+    <a href="#" class="footer-link">Diretrizes</a>
+  </div>
+  
+  <div class="divider"></div>
+  </div>
+  
+  <div class="row container remove-grid">
+    <a href="index.html" class="logo">
+    <img src="assets/imgs/footer/Logo.png" alt="">
+    <!--
+    <div class="social-media">
+      <a href="#" class="sm-link">
+        <i class="bx bxl-twitter"></i>
+      </a>
+      <a href="#" class="sm-link">
+        <i class="bx bxl-instagram"></i>
+      </a>
+      <a href="#" class="sm-link">
+        <i class="bx bxl-facebook-square"></i>
+      </a>
+      <a href="#" class="sm-link">
+        <i class="bx bxl-youtube"></i>
+      </a>
+      </div>-->
+    </a>
+  </div>
+  
+  </footer>
+
+</body>
+</html>
